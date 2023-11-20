@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ViajarEj2DI" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Otros atributos del tema -->
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#303F9F</item> <!-- Cambia este valor para la barra de estado -->
+        <item name="colorAccent">#FF4081</item>
+
+    </style>
+
+
+    <style name="Theme.ViajarEj2DI" parent="Base.Theme.ViajarEj2DI" />
+</resources>
