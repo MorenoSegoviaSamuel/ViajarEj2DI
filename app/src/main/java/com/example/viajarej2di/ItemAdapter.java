@@ -1,9 +1,11 @@
 package com.example.viajarej2di;
 
 import android.content.Context;
+import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageSwitcher;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -32,7 +34,17 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemViewHolder> {
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         int imageId = imageList.get(position);
 
+
         holder.imagen.setImageResource(imageId);
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImageSwitcher imageSwitcher = v.getRootView().findViewById(R.id.imageswitcher);
+                imageSwitcher.setImageResource(imageId);
+            }
+        });
+
     }
 
     @Override
